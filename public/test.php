@@ -5,6 +5,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description"/>
 		<meta name="author">
+		<meta name="csrf-token" content="{{ csrf_token() }}">
+
 		<script src="/js/app.js"></script>
 		<link rel="stylesheet" href="/css/app.css">
 		<title>TEST</title>
@@ -140,6 +142,11 @@
 		$(function() {
 			$(document).foundation();
 		});
+		$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
 		</script>
 	</body>
 </html>

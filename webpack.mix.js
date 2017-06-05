@@ -30,3 +30,5 @@ mix.combine([
 	'uikit/dist/js/uikit-icons.min.js',
 	'semantic/dist/semantic.min.js'
 ], 'public/js/app.js');
+
+mix.copy('semantic/dist/themes/', 'public/css/themes/');
