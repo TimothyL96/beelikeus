@@ -412,32 +412,6 @@
       <input type="hidden" name="receipt">
       <i class="dropdown icon"></i>
       <div class="default text">Saved Contacts</div>
-      <div class="menu">
-        <div class="item" data-value="jenny" data-text="Jenny">
-          <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg">
-          Jenny Hess
-        </div>
-        <div class="item" data-value="elliot" data-text="Elliot">
-          <img class="ui mini avatar image" src="/images/avatar/small/elliot.jpg">
-          Elliot Fu
-        </div>
-        <div class="item" data-value="stevie" data-text="Stevie">
-          <img class="ui mini avatar image" src="/images/avatar/small/stevie.jpg">
-          Stevie Feliciano
-        </div>
-        <div class="item" data-value="christian" data-text="Christian">
-          <img class="ui mini avatar image" src="/images/avatar/small/christian.jpg">
-          Christian
-        </div>
-        <div class="item" data-value="matt" data-text="Matt">
-          <img class="ui mini avatar image" src="/images/avatar/small/matt.jpg">
-          Matt
-        </div>
-        <div class="item" data-value="justen" data-text="Justen">
-          <img class="ui mini avatar image" src="/images/avatar/small/justen.jpg">
-          Justen Kitsune
-        </div>
-      </div>
     </div>
   </div>
    <div class="ui segment">
@@ -470,20 +444,31 @@
   </div>
 </div>
 
+<div class="ui left demo vertical inverted sidebar labeled icon menu">
+  <a class="item">
+    <i class="home icon"></i>
+    Home
+  </a>
+  <a class="item">
+    <i class="block layout icon"></i>
+    Topics
+  </a>
+  <a class="item">
+    <i class="smile icon"></i>
+    Friends
+  </a>
+</div>
+
 </div>
 <script>
 $('.ui.modal')
-  .dropdown({
-    onChange: function(value) {
-      $('.test.modal')
-        .modal('setting', 'transition', value)
-        .modal('show')
-      ;
-    }
-  })
+.modal('setting', 'transition', 'horizontal flip')
+  //.modal('show')
 ;
-$('.ui.modal')
-.modal('show');
+
+$('.ui.labeled.icon.sidebar')
+  .sidebar('toggle')
+;
 </script>
 	</body>
 </html>
