@@ -18,7 +18,8 @@ mix.styles([
 	'public/css/temp.css',
 	'node_modules/font-awesome/css/font-awesome.min.css',
 	'uikit/dist/css/uikit.min.css',
-	'node_modules/foundation-sites/dist/css/foundation.min.css'
+	'node_modules/foundation-sites/dist/css/foundation.min.css',
+	'semantic/dist/semantic.min.css'
 ], 'public/css/app.css');
 
 mix.combine([
@@ -26,5 +27,6 @@ mix.combine([
 	'public/js/temp.js',
 	'node_modules/foundation-sites/dist/js/foundation.min.js',
 	'uikit/dist/js/uikit.min.js',
-	'uikit/dist/js/uikit-icons.min.js'
+	'uikit/dist/js/uikit-icons.min.js',
+	'semantic/dist/semantic.min.js'
 ], 'public/js/app.js');
