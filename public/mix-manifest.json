@@ -3,5 +3,6 @@
   "/css/app.css": "/css/app.css",
   "/css/temp.css": "/css/temp.css",
   "/js/temp.js": "/js/temp.js",
-  "s/js/app.js": "s/js/app.js"
+  "s/js/app.js": "s/js/app.js",
+  "/mix.js": "/mix.js"
 }

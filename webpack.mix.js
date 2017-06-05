@@ -17,11 +17,14 @@ mix.js('resources/assets/js/app.js', 'public/js/temp.js')
 mix.styles([
 	'public/css/temp.css',
 	'node_modules/font-awesome/css/font-awesome.min.css',
+	'uikit/dist/css/uikit.min.css',
 	'node_modules/foundation-sites/dist/css/foundation.min.css'
 ], 'public/css/app.css');
 
 mix.combine([
 	'node_modules/jquery/dist/jquery.min.js',
 	'public/js/temp.js',
-	'node_modules/foundation-sites/dist/js/foundation.min.js'
+	'node_modules/foundation-sites/dist/js/foundation.min.js',
+	'uikit/dist/js/uikit.min.js',
+	'uikit/dist/js/uikit-icons.min.js'
 ], 'public/js/app.js');
